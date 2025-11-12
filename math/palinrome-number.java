@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class Solution {
     public boolean isPalindrome(int x) {
 
@@ -15,5 +17,14 @@ class Solution {
             return (myNum == x) ? true : false;
         }
 
+    }
+
+    public static void main(String[] args){
+        Scanner myScanner = new Scanner(System.in);
+        System.out.println("Enter a number");
+        int y = myScanner.nextInt();
+
+        boolean result = solution.isPalindrome(y);
+        System.out.println("Is palindrome: " + result);
     }
 }
